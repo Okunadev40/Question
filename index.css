@@ -1,0 +1,56 @@
+body{
+  font-family: arial,sans-serif;
+  text-align: center;
+  padding: 50px;
+ color: brown; 
+  background-color: navy;
+}
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-style: oblique;
+  text-decoration: underline;
+  margin-bottom: 50px;  
+}
+h3{
+  font-size: x-large;
+}
+section{
+  cursor: pointer;
+  padding: 25px;
+  border: 2px dotted aliceblue;
+  justify-content: center;
+  
+}
+#result{
+  width: 8%;
+  height: 20px;
+  box-sizing: content-box;
+  padding: 5px;
+  font-size: large;
+}
+span{
+  font-size: larger;
+  font-weight: lighter;
+}
+input{
+border-radius: 15px;
+height: 40px;
+width: 50%;
+}
+button{
+  padding: 5px;
+  width: 5%;
+  color: rgb(173, 97, 243);
+  background-color: black;
+  border-radius: 5px;
+}
+button.last{
+width: 30%;
+background-color: rgb(189, 177, 177);
+padding: 10px;
+color: black;
+font-style: oblique;
+font-weight: bold;
+font-size: x-large;
+border-radius: 20px;
+}

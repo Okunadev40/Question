@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>MIND TEST</h1>
+  <section><h3>What is the capital of Canada?</h3>
+  <input type="text" id="capital" ><br><br>
+  
+  <!-- <input type="text" disabled id="result"> -->
+ 
+</section><br>
+  <section> <h3>Which planet is known as the red planet?</h3>
+    <input type="text" id="planet"><br><br>
+    
+  <!-- <input type="text" disabled> -->
+</section> <br>
+    
+  <section> <h3>What is the largest internal organ?</h3>
+    <input type="text" id="organ"><br><br>
+  </section> <br>
+  <section> <h3>How many continents do we have?</h3>
+    
+    <input type="text" id="many"><br><br>
+    
+  </section> <br>
+  <section> <h3>Nigeria is in which continent?  </h3>
+    
+    <input type="text" id="continent"><br><br>
+  </section> <br><br>
+    <button onclick="sub()" class="last"> SUBMIT <input type="text" disabled id="result"></button><br><br>
+    <span id="theEdit">Let see what you've got😜</span>
+</body>
+<script>
+  var counter ;
+  var plan ;
+  var last;
+  var fifth;
+  var fourth
+  function sub(){
+    let counter = capital.value
+    console.log(counter);
+
+    let plan = planet.value
+    console.log(plan);
+    
+    let part = organ.value
+      console.log(plan);
+
+      let fourth = many.value
+      console.log(fourth);
+
+      let fifth = continent.value
+      console.log(fifth);
+      let last = result.value
+  console.log(last);
+
+
+  if(counter=="Ottawa" &&plan=="Mars" && part=="Liver" &&fourth=="Seven" && continent.value=="Africa"){
+    result.value="5/5"
+    theEdit.innerText="WELLDONE CHAP! YOU GOT EVERRYTHING"
+  }
+  else if(counter !="Ottawa" &&plan!="Mars" && part!="Liver" &&fourth!="Seven" && fifth!="Africa")
+{
+  result.value="0/5"
+theEdit.innerText="Awful🤦‍♂️"}
+  else if((counter !="Ottawa" &&plan=="Mars" && part=="Liver" &&fourth=="Seven" && fifth=="Africa")||
+  (counter =="Ottawa" &&plan!="Mars" && part=="Liver" &&fourth=="Seven" && fifth=="Africa")||
+  (counter =="Ottawa" &&plan=="Mars" && part!="Liver" &&fourth=="Seven" && fifth=="Africa")||
+  (counter =="Ottawa" &&plan=="Mars" && part=="Liver" &&fourth!="Seven" && fifth=="Africa")||
+  (counter =="Ottawa" &&plan=="Mars" && part=="Liver" &&fourth=="Seven" && fifth!="Africa")
+){
+result.value="4/5"
+theEdit.innerText="So Close🤞"
+  }
+  else if((counter !="Ottawa" &&plan!="Mars" && part=="Liver" &&fourth=="Seven" && fifth=="Africa")||
+  (counter !="Ottawa" &&plan=="Mars" && part!="Liver" &&fourth=="Seven" && fifth=="Africa")||
+  (counter !="Ottawa" &&plan=="Mars" && part=="Liver" &&fourth!="Seven" && fifth=="Africa")||
+  (counter !="Ottawa" &&plan=="Mars" && part=="Liver" &&fourth=="Seven" && fifth!="Africa")||(counter =="Ottawa" &&plan!="Mars" && part!="Liver" &&fourth=="Seven" && fifth=="Africa")||
+  (counter =="Ottawa" &&plan!="Mars" && part=="Liver" &&fourth!="Seven" && fifth=="Africa")||
+  (counter =="Ottawa" &&plan=="Mars" && part=="Liver" &&fourth!="Seven" && fifth!="Africa")||
+  (counter =="Ottawa" &&plan!="Mars" && part=="Liver" &&fourth=="Seven" && fifth!="Africa")||
+  (counter =="Ottawa" &&plan=="Mars" && part!="Liver" &&fourth!="Seven" && fifth!="Africa")||
+  (counter =="Ottawa" &&plan=="Mars" && part!="Liver" &&fourth=="Seven" && fifth!="Africa")
+){
+  result.value="3/5"
+  theEdit.innerText="You Tried👍"
+  }
+  else if((counter !="Ottawa" &&plan!="Mars" && part!="Liver" &&fourth=="Seven" && fifth=="Africa")||
+  (counter !="Ottawa" &&plan=="Mars" && part!="Liver" &&fourth!="Seven" && fifth=="Africa")||
+  (counter !="Ottawa" &&plan!="Mars" && part=="Liver" &&fourth=="Seven" && fifth!="Africa")||
+  (counter =="Ottawa" &&plan=="Mars" && part!="Liver" &&fourth!="Seven" && fifth!="Africa")||(counter =="Ottawa" &&plan!="Mars" && part!="Liver" &&fourth!="Seven" && fifth=="Africa")||
+  (counter =="Ottawa" &&plan!="Mars" && part=="Liver" &&fourth=="Seven" && fifth!="Africa")|
+  (counter !="Ottawa" &&plan=="Mars" && part!="Liver" &&fourth=="Seven" && fifth=="Africa")||
+  (counter !="Ottawa" &&plan=="Mars" && part=="Liver" &&fourth!="Seven" && fifth!="Africa")||(counter =="Ottawa" &&plan!="Mars" && part!="Liver" &&fourth=="Seven" && fifth!="Africa")){
+    result.value="2/5"
+    theEdit.innerText="👀"
+  }
+  }
+  
+   
+  
+  
+    
+   
+   
+  
+  
+ 
+  
+  
+  
+   
+ </script>
+
+ 
+</html>
